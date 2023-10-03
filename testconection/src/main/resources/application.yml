@@ -9,8 +9,14 @@ micronaut:
       swagger-ui:
         paths: classpath:META-INF/swagger/views/swagger-ui
         mapping: /swagger-ui/**
-
 netty:
   default:
     allocator:
       max-order: 3
+
+datasources:
+  default:
+    url: jdbc:postgresql://localhost:5432/Wecommit
+    username: postgres
+    password: dat0204000
+    driverClassName: org.postgresql.Driver
